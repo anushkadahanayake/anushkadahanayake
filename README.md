@@ -2,22 +2,32 @@
   <img src="assets/banner.svg" alt="Anushka Dahanayake Banner" width="100%">
 </p>
 
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Outfit&amp;weight=700&amp;size=22&amp;duration=3500&amp;pause=1000&amp;color=38bdf8&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Full-Stack+Developer;Web+Architect;Building+Scalable+Digital+Products" alt="Typing SVG" />
-  </a>
-</p>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="75%" valign="top">
+      <br/>
+      <a href="https://git.io/typing-svg">
+        <img src="https://readme-typing-svg.demolab.com?font=Outfit&amp;weight=700&amp;size=22&amp;duration=3500&amp;pause=1000&amp;color=38bdf8&amp;width=500&amp;lines=Full-Stack+Developer;Web+Architect;Building+Scalable+Digital+Products" alt="Typing SVG" />
+      </a>
+      <br/>
+      <p>I build full-stack web systems with a focus on performance, scalability, and real business value. I turn ideas into production-ready systems that solve real problems.</p>
+      <p>🌍 Experience working with international clients across the EU and Asia.</p>
+    </td>
+    <td width="25%" align="center" valign="middle">
+      <img src="assets/profile-avatar.svg" width="160px" alt="Anushka Dahanayake" />
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 🚀 About Me
 
-I build full-stack web systems with a focus on performance, scalability, and real business value.
+I specialize in architectural design and full-stack development, delivering robust digital products that drive commercial value.
 
 *   💻 **Full-stack:** Next.js, Node.js, PHP, MySQL, PostgreSQL
 *   ☁️ **Deployment:** VPS, Vercel, CI/CD pipelines
 *   🧠 **Focus:** SaaS, eCommerce, LMS, automation systems
-*   🌍 **Experience:** Working with international clients (EU & Asia)
 *   ⚡ **Execution:** I turn ideas into production-ready systems
 
 > 💡 *I don’t build “projects”. I build systems that solve real problems.*
@@ -106,9 +116,10 @@ I build full-stack web systems with a focus on performance, scalability, and rea
 
 ### 📫 Let's Connect
 
-*   💼 **LinkedIn:** [Anushka Dahanayake](https://linkedin.com/in/yourprofile) <!-- Replace with actual LinkedIn handle -->
-*   🌐 **Portfolio:** [yourdomain.com](https://yourdomain.com) <!-- Replace with actual portfolio URL -->
-*   ✉️ **Email:** [yourmail@example.com](mailto:yourmail@example.com)
+*   💼 **LinkedIn:** [Anushka Dahanayake](https://linkedin.com/in/anushkadahanayake)
+*   🌐 **Website:** [anushkadahanayake.com](https://anushkadahanayake.com)
+*   💼 **Portfolio:** [anushkadahanayake.com/portfolio](https://anushkadahanayake.com/portfolio)
+*   ✉️ **Email:** [info@anushkadahanayake.com](mailto:info@anushkadahanayake.com)
 
 ---
 
