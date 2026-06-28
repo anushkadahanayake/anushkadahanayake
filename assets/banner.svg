@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <!-- Google Fonts -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+      
+      .title {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        fill: url(#title-grad);
+      }
+      
+      .subtitle {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        fill: #94a3b8;
+        letter-spacing: 5px;
+      }
+      
+      .tagline {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        fill: #38bdf8;
+        letter-spacing: 2px;
+      }
+      
+
+      /* Glow animation */
+      @keyframes pulse-glow {
+        0%, 100% {
+          filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.4)) drop-shadow(0 0 15px rgba(139, 92, 246, 0.2));
+        }
+        50% {
+          filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.8)) drop-shadow(0 0 25px rgba(139, 92, 246, 0.5));
+        }
+      }
+      
+      .glow-text {
+        animation: pulse-glow 4s ease-in-out infinite;
+      }
+      
+      
+      /* Tech line animations */
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      
+      .tech-line {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: dash 4s ease-out forwards;
+      }
+    </style>
+    
+    <!-- Linear Gradients with color animation -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8; #818cf8; #ec4899; #38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8; #ec4899; #38bdf8; #818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899; #38bdf8; #818cf8; #ec4899" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <animateTransform attributeName="patternTransform" type="translate" from="0,0" to="0,40" dur="10s" repeatCount="indefinite" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.4"/>
+    </pattern>
+    
+    <!-- Blur Filter for background glow -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <!-- Background Rect -->
+  <rect width="100%" height="100%" fill="#070a13" />
+  
+  <!-- Glowing background blobs -->
+  <circle cx="120" cy="100" r="130" fill="#0ea5e9" opacity="0.12" filter="url(#blur)"/>
+  <circle cx="680" cy="250" r="150" fill="#d946ef" opacity="0.10" filter="url(#blur)"/>
+
+  <!-- Moving Grid Layer -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Cyberpunk Tech Accents / Borders -->
+  <path class="tech-line" d="M 50,30 L 750,30 L 770,50 L 770,300 L 750,320 L 50,320 L 30,300 L 30,50 Z" fill="none" stroke="#1e293b" stroke-width="1" />
+  <path class="tech-line" d="M 60,40 L 740,40 L 750,50 L 750,290 L 740,300 L 60,300 L 50,290 L 50,50 Z" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.7" />
+  
+  <!-- Corner Tech Brackets -->
+  <path d="M 40,40 L 70,40 M 40,40 L 40,70" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <path d="M 760,40 L 730,40 M 760,40 L 760,70" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <path d="M 40,310 L 70,310 M 40,310 L 40,280" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <path d="M 760,310 L 730,310 M 760,310 L 760,280" fill="none" stroke="#38bdf8" stroke-width="3" />
+
+  <!-- Animated Particles -->
+  <circle cx="180" cy="110" r="3" fill="#38bdf8" opacity="0.3">
+    <animate attributeName="cx" values="180;195;180" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="110;95;110" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="640" cy="90" r="2" fill="#c084fc" opacity="0.3">
+    <animate attributeName="cx" values="640;650;640" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="90;75;90" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="12s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="220" cy="250" r="2.5" fill="#38bdf8" opacity="0.3">
+    <animate attributeName="cx" values="220;230;220" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="250;235;250" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="580" cy="270" r="3.5" fill="#f472b6" opacity="0.3">
+    <animate attributeName="cx" values="580;595;580" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="270;255;270" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="9s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Background Coding Symbol -->
+  <text x="60" y="240" font-family="'Outfit', sans-serif" font-weight="800" font-size="110" fill="#1e293b" opacity="0.15">&lt;/&gt;</text>
+
+  <!-- Title & Subtitle Group -->
+  <g transform="translate(400, 160)" text-anchor="middle">
+    <!-- Animated Main Title -->
+    <text class="title glow-text" x="0" y="0">ANUSHKA DAHANAYAKE</text>
+    
+    <!-- Subtitle -->
+    <text class="subtitle" x="0" y="45">WEB ARCHITECT &amp; FULL-STACK DEVELOPER</text>
+    
+    <!-- Decorative Separator -->
+    <g transform="translate(0, 65)">
+      <line x1="-120" y1="0" x2="120" y2="0" stroke="url(#title-grad)" stroke-width="2">
+        <animate attributeName="stroke-dasharray" values="0,240; 240,0" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="4" fill="#38bdf8" />
+    </g>
+
+    <!-- Tagline / Focus -->
+    <text class="tagline" x="0" y="90">BUILDING SCALABLE DIGITAL SYSTEMS</text>
+  </g>
+
+  <!-- HUD/Indicator lines -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.3">
+    <line x1="70" y1="70" x2="170" y2="70" />
+    <circle cx="170" cy="70" r="2" fill="#38bdf8" />
+    <line x1="730" y1="280" x2="630" y2="280" />
+    <circle cx="630" cy="280" r="2" fill="#38bdf8" />
+  </g>
+
+</svg>
